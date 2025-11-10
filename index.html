@@ -5,32 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    
+    <header>
+        <img src="images/logo.svg" alt="logo" class="logo">
+    
+        <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+            </a>
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <header>
-            <img src="images/logo.svg" alt="logo" class="logo">
-        
-            <nav>
-                <a href="#" class="hide-desktop">
-                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
-                </a>
-                <ul class="show-desktop hide-mobile" id="nav">
-                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg"></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
         <img src="images/server.svg" alt="server" class="server">
         <h1>Web Hosting for the Modern Era</h1>
         <p class="subhead">Go serverless and pay only for what you use.</p>
         
-        <img src="images/scroll.svg">
+        <img src="images/scroll.svg" class="scrollimg">
         
     </div>
 
@@ -95,8 +96,7 @@
                 </li>
             </ul> 
         </div>
-    
-    
-    
+    </div>
+
 </body>
 </html>
