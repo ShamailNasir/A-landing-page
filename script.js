@@ -23,3 +23,9 @@ links.forEach((link, index) => {
     })
 })
 
+const btn = document.querySelector('.menu');
+const menu = document.querySelector('nav ul');
+
+btn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});

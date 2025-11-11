@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@200;600&display=swap');
 
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -71,6 +72,7 @@ header {
     z-index: 1000;
     justify-content: space-around;
     align-items: center;
+
     width: 100%;
 }
 
@@ -196,6 +198,10 @@ h1 {
     */
 }
 
+.getstarted:hover {
+    transform: scale(1.01);
+}
+
 .black-container {
     padding: 2em;
     background-color: #333636;
@@ -260,5 +266,199 @@ h1 {
 
 .black-container ul li a.clicked {
     color: rgb(194, 87, 194);
+}
+
+@media (min-width: 2560px) {
+  body {
+    max-width: 2560px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1440px) {
+    .blue-container ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .blue-container ul li {
+        max-width: 30%;
+        font-size: 1.4em;
+    }
+    .gray-container ul {
+        margin: 7em;
+        display: flex;
+        gap: 5em;
+        justify-content: space-around;
+    }
+    .footer-btn {
+        font-size: 1.1em;
+    }
+    .whitelogo
+    {
+        width: 20%;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.35em;
+    }
+
+    .subhead {
+        font-size: 1.1em;
+    }
+    .server{
+        width: 40%;
+    }
+    .blue-container ul {
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .blue-container ul li {
+        margin-bottom: 2em;
+        font-size: 1.4em;
+        max-width: 65%;
+    }
+    .gray-container ul {
+        margin: 7em 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5em
+    }
+    .review {
+        font-size: 1.2em;
+        font-style: italic;
+        max-width: 20em;
+    }
+    .footer-btn {
+        font-size: 1.1em;
+    }
+    .whitelogo
+    {
+        width: 25%;
+    }
+}
+@media (max-width: 576px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px ;
+    }
+    .logo {
+        width: 140px;
+        padding: 0.5em 1px 1em 2em;
+        
+    }
+
+    .show-desktop {
+        display: none;
+    }
+
+    .hide-desktop {
+        display: contents;
+    }
+
+    .menu {
+        padding-right: 1.5em;
+    }
+
+    .menu:hover {
+        transform: scale(1.05);
+    }
+    .server{
+        width: 50%;
+    }
+
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    .subhead {
+        font-size: 1em;
+    }
+    .scrollimg {
+        display: none;
+    }
+    .blue-container {
+        margin-top: 30%;
+        transform: skewY(-4deg);
+    }
+    .blue-container ul {
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        transform: skewY(4deg);
+    }
+    .blue-container ul li {
+        margin-bottom: 2em;
+        font-size: 1.4em;
+        max-width: 85%;
+    }
+    .gray-container {
+        margin-bottom: 2em;
+    }
+    .gray-container ul {
+        margin: 7em 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 5em
+    }
+    .review {
+        font-size: 1.2em;
+        font-style: italic;
+        max-width: 20em;
+    }
+    .getstarted {
+        margin-top: 2em;
+        font-size: 1.3em;
+        width: 60%;
+    }
+    .black-container {
+        margin-top: 5em;
+        padding: 3em 0em;
+        transform: skewY(5deg);
+    }
+    .black-container .container {
+        transform: skewY(-5deg);
+    }
+    .trail {
+        margin-top: 5%;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    .footer-btn {
+        font-size: 1em;
+    }
+    .whitelogo
+    {
+        width: 30%;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: 77%;
+        gap: 2em;
+        background: rgba(223, 223, 223, 0.5);
+        backdrop-filter: blur(10px);
+        padding: 2em 2em 2em 2em;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        padding: 1.5em 2em;
+    }
+    nav ul.active {
+        display: flex;
+    }
+
 }
 
